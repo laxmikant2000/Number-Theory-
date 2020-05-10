@@ -11,7 +11,7 @@ public class Main {
 
             int n = sc.nextInt();
 
-            int digits = (int)Math.floor(Math.log10(n)) + 1;
+            int digits = (int)Math.floor(Math.log10(n)) + 1;  // O(1)
 
             System.out.println(digits); 
         } 
