@@ -19,6 +19,14 @@ Output:
 𝐹239 mod 1 000 = 39 679 027 332 006 820 581 608 740 953 902 289 877 834 488 152 161 (mod 1 000) = 161.
 */
 
+/* Why below code works ?
+   To compute,
+say, 𝐹2015 mod 3 we just need to find the remainder of 2015 when divided by 8. Since 2015 = 251 · 8 + 7, we
+conclude that 𝐹2015 mod 3 = 𝐹7 mod 3 = 1.
+This is true in general: for any integer 𝑚 ≥ 2, the sequence 𝐹𝑛 mod 𝑚 is periodic. The period always
+starts with 01 and is known as Pisano period.
+*/
+
 
 import java.io.*;
 import java.util.*;
