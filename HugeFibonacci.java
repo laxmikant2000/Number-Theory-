@@ -83,42 +83,6 @@ public class HugeFibonacci {
     }
     
     
-/********************************************************************************************************************/
-    
-    // array of int type taking input
-    public static int[] init(int n) {
-        
-        int[] arr = new int[n];
-        
-        for(int i = 0; i < n; ++i)
-            arr[i] = sc.nextInt();
-            
-        return arr;
-    }
-    
-    //return gcd of two numbers
-    public static int gcd(int a, int b) {
-        
-        if(a == 0)
-            return b;
-            
-        return gcd(b % a, a);
-    }
-    
-    
-    //checks whether a number is prime or not
-    public static boolean prime(int n) {
-        
-        if(n < 2)
-            return false;
-        
-        for(int i = 2; i * i <= n; ++i)
-            if(n % i == 0)
-                return false;
-                
-        return true;
-    }
-    
 /*******************************************************************************************************************/
     
                         /****        Fast I/O        ****/
