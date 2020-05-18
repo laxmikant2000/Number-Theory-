@@ -18,7 +18,9 @@ public class Main {
     static long[] arr;  // used for taking first two input
     static long[][] I;  // Identity matrix
     static long[][] T;  // Transition matrix
-
+    
+    
+    // below function performs matrix multiplication
     static void mul(long[][] A, long[][] B, int dim) {   
 
         long[][] res = new long[dim + 1][dim + 1];
@@ -87,7 +89,7 @@ public class Main {
             arr[1] = sc.nextInt();
             arr[2] = sc.nextInt();
             int n = sc.nextInt();
-            ++n;
+            ++n; // for 1 based indexing
 
             long res = myfibo(n);
             System.out.println(res);
